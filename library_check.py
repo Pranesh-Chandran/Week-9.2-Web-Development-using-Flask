@@ -15,7 +15,7 @@ def print_library_versions():
     print(f"Flask          : {flask.__version__}")
     print(f"NumPy          : {np.__version__}")
     print(f"Pandas         : {pd.__version__}")
-    print(f"Scikit-learn   : {sklearn.__version__}")
+    #print(f"Scikit-learn   : {sklearn.__version__}")
 
     print("=" * 50)
 print_library_versions()
