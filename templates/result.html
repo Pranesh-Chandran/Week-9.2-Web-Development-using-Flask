@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+        .card{
+            width:450px;
+            background:white;
+            border-radius:20px;
+            padding:35px;
+            text-align:center;
+            box-shadow:0 15px 30px rgba(0,0,0,.35);
+        }
+
+        h1{
+            color:#2e7d32;
+            margin-bottom:15px;
+        }
+
+        h2{
+            color:#333;
+            margin-bottom:20px;
+        }
+
+        .result{
+            font-size:30px;
+            font-weight:bold;
+            color:#1565c0;
+            padding:20px;
+            background:#f4f6f8;
+            border-radius:12px;
+            margin:25px 0;
+        }
+
+        .btn{
+            display:inline-block;
+            text-decoration:none;
+            background:#4CAF50;
+            color:white;
+            padding:12px 28px;
+            border-radius:10px;
+            font-size:18px;
+            transition:.3s;
+        }
+
+        .btn:hover{
+            background:#2e7d32;
+            transform:scale(1.05);
+        }
+
+        footer{
+            margin-top:20px;
+            color:gray;
+            font-size:14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <h1>🔋 EV Battery Health Prediction</h1>
+
+    <h2>Prediction Result</h2>
+
+    <div class="result">
+        {{ prediction }}
+    </div>
+
+    <a href="/" class="btn">🔄 Predict Again</a>
+
+    <footer>
+        EV Battery Health Monitoring System
+    </footer>
+
+</div>
+
+</body>
+</html>
